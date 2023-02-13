@@ -42,3 +42,6 @@ NOTES:
             - https://docs.ergoplatform.com/dev/stack/basics/
             - Could create Node.js to Python bridge through script calls?
             
+- basics for creating a new GitHub repo with website (static website)
+    - https://www.codingthesmartway.com/how-to-host-a-website-on-github-for-free/
+    
