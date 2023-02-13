@@ -29,6 +29,12 @@ NOTES:
 - Ergo Payment Portal Example
     - https://github.com/ThierryM1212/ergo-pay/tree/main/ergo-payment-portal
 
+- look into deploying Node with npm gh-pages install
+    - https://javascript.plainenglish.io/deploying-any-app-to-github-pages-1e8e946bf890
+    - https://medium.com/@ilyailin7777/how-to-deploy-javascript-app-to-github-pages-4b37b315556f
+    - GitHub Actions (stackoverflow)
+        - https://stackoverflow.com/questions/15718649/how-to-publish-a-website-made-by-node-js-to-github-pages
+        
 - map out languages and frameworks used for ERGO smart contracts
 - how will the front end be built out?
     - start with a basic Node server with API endpoints if needed
