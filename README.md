@@ -12,8 +12,9 @@ Who Can Use The Software
         - Provide transfer of 1,2 or 3 ERGO in drop down menu
 
 ERGO Smart Contracts:
-    - will need to facilitate donations with ERGO
-    - use Browser environment
+   
+   - will need to facilitate donations with ERGO
+   - use Browser environment
         - https://docs.ergoplatform.com/dev/stack/browser/
             - will ERGO Pay work:
                 - https://docs.ergoplatform.com/dev/wallet/payments/ergopay/ergo-pay/
