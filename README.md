@@ -26,6 +26,18 @@ ERGO Smart Contracts:
 
 NOTES:
 
+- Ergo Hackathon - ErgoDocs Home Page:
+    - https://docs.ergoplatform.com
+        Development Stack:
+            - https://docs.ergoplatform.com/dev/start/
+            Browser:
+                - https://docs.ergoplatform.com/dev/stack/browser/
+                Ergo Pay:
+                    - https://docs.ergoplatform.com/dev/wallet/payments/ergopay/ergo-pay/
+                    
+        ErgoScript (Smart Contracts)
+            - https://docs.ergoplatform.com/dev/scs/ergoscript/#courses        
+
 - Ergo Payment Portal Example
     - https://github.com/ThierryM1212/ergo-pay/tree/main/ergo-payment-portal
 
@@ -44,4 +56,3 @@ NOTES:
             
 - basics for creating a new GitHub repo with website (static website)
     - https://www.codingthesmartway.com/how-to-host-a-website-on-github-for-free/
-    
