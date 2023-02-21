@@ -25,6 +25,33 @@ ERGO Smart Contracts:
 
 
 NOTES:
+- Building Static Website From Thiery Repo
+    - check all references to https://github.com/ThierryM1212 and update with my github references
+        - ** finding references to C:\Users\thier\Ergo\ergo-pay\ergo-payment-portal\resources in svg files /dist directory after building static websitem 
+    - go through code and find any other link references that need to be updated
+    - will need to do an npm install (make sure package lock has been deleted)
+
+    - can test the code by running npm start (after npm install is successful)
+        - this will run on localhost but will everything work running on localhost?
+            - see if payments can be tested while running on localhost, check references to external links
+            - also what domain authorization checks for accepting payments (does something exist for this?)
+    
+    - will need to execute a command to build the Static Website Version for the ergo payment portal
+        - npm run buildstatic
+        - follow model in Thiery repo for file placement in my repo?
+
+- Ergo Script Compiler
+    - https://github.com/ThierryM1212/ergo-pay/blob/main/ergo-payment-portal/src/ergo-related/compiler.js
+        - The compiler references this file : ErgoScriptCompiler-assembly-0.1.jar
+            - looking into compiling this for macOS and will try setting correct local path
+            - if compiling does not work will look into pre-compiled download of the jar
+                - testing installing Scala first on macOS through Homebrew
+                    - https://www.scala-lang.org/download/
+                      - Scala install through brew was successful and I am able to launch scala and sbt
+                        - So I should not need to do a separate install of SBT?
+                        - Trying ergoscript compiler as paths have been added to scala, sbt, scala-cli etc...
+                - https://github.com/ergoplatform/ergoscript-compiler
+                - https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html
 
 - Ergo Hackathon - ErgoDocs Home Page:
     - https://docs.ergoplatform.com
@@ -56,3 +83,6 @@ NOTES:
             
 - basics for creating a new GitHub repo with website (static website)
     - https://www.codingthesmartway.com/how-to-host-a-website-on-github-for-free/
+
+- For tracking Ergo transactions by Wallet address: https://explorer.ergoplatform.com/transactions/
+

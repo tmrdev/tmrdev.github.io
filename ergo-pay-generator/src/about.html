@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../resources/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title>Ergo Payment Portal</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <div>
+            <a class="navbar-brand" href="./about.html">
+                <img src="../resources/ergo_card.svg" class="d-inline-block align-top" alt="" />
+            </a>
+            <a class="navbar-brand" href="./index.html">
+                Create request
+            </a>
+            <a class="navbar-brand" href="./voucher.html">
+                Vouchers
+            </a>
+        </div>
+        <h2>Ergo Payment Portal</h2>
+        <span>&nbsp;</span>
+        <h4>About</h4>
+    </nav>
+
+    <div class="container-xxl mx-auto w-50">
+        <br />
+        <h4>What is Ergo Payment Portal ?</h4>
+        <p class="text-justify">This dApp intends to ease <a href="https://ergoplatform.org/en/"
+                target="_blank">Ergo</a> payments for small businesses and personal usage. It provides
+            a way to integrate Ergo or SigUSD payments in other applications, allowing to request a payment from
+            an URL.</p>
+        <br />
+
+        <h4>How does it works ?</h4>
+        <p class="text-justify">A seller can <a href="./index.html">create an URL</a> to the payment portal in order
+            to receive a payment. This URL
+            includes the address for the payment, the currency (ERG or SigUSD), the amount and a customizable reference
+            for the seller.
+        </p>
+        <p class="text-justify">The buyer is redirected to the payment page buy clicking on the link, he is invited to
+            sign the transaction to proceed the payment, the sample link following suggests a donation of 1 ERG for this dApp.
+        </p>
+        <a href="https://thierrym1212.github.io/paymentportal/pay.html?address=9ew97YCt7zQDwmLsytMAWGj2kockM11PFCnRvT2cz9LQaaB7uPG&currency=ERG&amount=1&ref=Donation_to_Ergo_Payment_Portal"
+            target="_blank">https://thierrym1212.github.io/paymentportal/pay.html?<br/>
+                            &nbsp;&nbsp;address=9ew97YCt7zQDwmLsytMAWGj2kockM11PFCnRvT2cz9LQaaB7uPG&nbsp;&amp;<br/>
+                            &nbsp;&nbsp;currency=ERG&nbsp;&amp;<br/>
+                            &nbsp;&nbsp;amount=1&nbsp;&amp;<br/>
+                            &nbsp;&nbsp;ref=Donation_to_Ergo_Payment_Portal
+        </a>
+        
+        <p class="text-justify">Once the transaction is confirmed, the <a href="./voucher.html">Voucher page</a> allows
+            the seller to view the list of received payments.</p>
+
+        <a href="https://thierrym1212.github.io/paymentportal/voucher.html?address=9ew97YCt7zQDwmLsytMAWGj2kockM11PFCnRvT2cz9LQaaB7uPG"
+            target="_blank">https://thierrym1212.github.io/paymentportal/voucher.html?address=9ew97YCt7zQDwmLsytMAWGj2kockM11PFCnRvT2cz9LQaaB7uPG
+        </a>
+        <p class="text-justify">And additional tool "monitor-vouchers" is included in the git repository in order to be
+            able to monitor the
+            received payments in an automated way retreiving a json file.
+        </p>
+        <br />
+
+        <h4>How can I proceed a payment ?</h4>
+        <p class="text-justify">You need to install a Chrome extension extension configure an ergo wallet with some ERGs: </p>
+        <p class="text-justify">- <a href="https://github.com/ThierryM1212/SAFEW/releases">SAFEW</a></p>
+        <p class="text-justify">- <a href="https://chrome.google.com/webstore/detail/nautilus-wallet/gjlmehlldlphhljhpnlddaodbjjcchai">Nautilus</a></p>
+        <p class="text-justify">- <a href="https://chrome.google.com/webstore/detail/yoroi/ffnbelfdoeiohenkjibnmadjiehjhajb">Yoroi</a></p>
+        <p class="text-justify">The application will propose you to connect your the wallet when loading.</p>
+        <p class="text-justify">Only one wallet extension with dApp connector needs to be enabled in your browser.</p>
+        <br />
+
+        <h4>How the dApp is working ?</h4>
+        <p class="text-justify">The application is distributed as a static webpage and is executed in your browser.</p>
+        <p class="text-justify">The transactions are sent to your wallet dApp connector so you can review and sign them.
+        </p>
+        <p class="text-justify">Once validated with the wallet dApp connector a transaction is sent to the blockchain, it
+            cannot be cancelled or reverted. Review it carefully.
+        </p>
+        <br />
+
+        <h4>How to integrate the Ergo and/or SigUSD payments in my website ?</h4>
+        <p class="text-justify">You will need to generate a valid payment link to the Ergo Payment portal from your
+            website in order to use the deployed dApp. You can use the "reference" field in order to store up to 40
+            ascii characters, to identify the payment once received.</p>
+        <p class="text-justify">The application is opensource, it can be cloned, adapted to your need and ran as a
+            static webpage on your web server, with no dApp fee.</p>
+        <p class="text-justify">The received payments can be monitored using the Voucher page of the dApp or in an
+            automated way
+            running the voucher-monitor tool provided with the application</p>
+        <br />
+
+        <h4>What is the fee ?</h4>
+        <p class="text-justify">The application currently deployed here has a 0.1% fee with a mininimum of 0.001 ERG or
+            0.01 SigUSD,
+            the fee is removed from the amount sent by the buyer and so is paid "by the seller".</p>
+        <p class="text-justify">The "buyer" will pay only the Ergo transaction fee additionnally to the amount requested
+            to proceed the transaction.</p>
+        <p class="text-justify">The application is opensource and can be installed as a static webpage, it is possible
+            to configure the fee to 0.</p>
+        <p class="text-justify">To integrate the ergo payment in your website, you could deploy this dApp on your server
+            and set the fee to 0.</p>
+        <br />
+
+        <h4>Why I don't have the pleasure to accept the RGPD or the cookies to use the dApp ?</h4>
+        <p class="text-justify">The application does not use cookies and does not store or manipulate personal data on
+            server side. It is delivered as a static webpage running in your browser.</p>
+        <br />
+
+        <h4>Where can I review the application ?</h4>
+        <p class="text-justify">The code of the application is hosted on gihub:<a
+                href="https://github.com/ThierryM1212/ergo-pay" target="_blank">&nbsp;Github repository</a></p>
+        <br />
+
+        <h4>What if I find a bug ?</h4>
+        <p class="text-justify">Please create an issue in the <a
+                href="https://github.com/ThierryM1212/ergo-pay/issues" target="_blank">gihub</a> project, or
+            better, a pull request.</p>
+        <br />
+
+    </div>
+
+    <footer class="footer2 align-items-center">
+        <div class="col-md-12 text-muted ">
+            © 2021 ThierryM1212 - 
+            <a href="https://t.me/ThierryM1212" target="_blank">
+                <img src="../resources/logo_telegram.svg" width="20" height="20" class="d-inline-block align-top" alt="" />
+            </a>
+            &nbsp;  
+            <a href="https://github.com/ThierryM1212/" target="_blank">
+                <img src="../resources/GitHub.png" width="20" height="20" class="d-inline-block align-top" alt="" />
+            </a>
+            &nbsp; 
+            <a href="https://dapp.ergo.ga/" target="_blank">
+                <img src="../resources/dApps.svg" width="50" height="20" class="d-inline-block align-top" alt="" />
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
